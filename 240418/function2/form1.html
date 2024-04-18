@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="getparam.php" method="post" >
+        <p>
+            <label>Text Box
+                <input type="text" name="text" placeholder="example" value="すでに入力">
+            </label>
+        </p>
+
+        <p>
+            <label>Text Box (password)
+                <input type="password" name="pass">
+            </label>
+        </p>
+        
+        <p>
+            <label>複数のText Box
+                <textarea name="text2" id="text2" cols="50" rows="5"></textarea>
+            </label>
+        </p>
+
+        <p>Check Box<br>
+            <label>
+                <input type="checkbox" name="chk[]" value="1">select1
+            </label><br>
+            <label>
+                <input type="checkbox" name="chk[]" value="2">select2
+            </label><br>
+            <label>
+                <input type="checkbox" name="chk[]" value="3">select3
+            </label>
+        </p>
+
+        <p>Radio Btn<br>
+            <label>
+                <input type="radio" name ="radio" value="1">select1
+            </label><br>
+            <label>
+                <input type="radio" name ="radio" value="2">select2
+            </label><br>
+            <label>
+                <input type="radio" name ="radio" value="3">select3
+            </label>
+        </p>
+
+        <p>
+            <label>Drop Down List
+              <selct name = "selct">
+                <option value="1">select1</option>
+                <option value="2">select2</option>
+                <option value="3">select3</option>
+                <option value="4">select4</option>
+                <option value="5">select5</option>
+              </selct>
+            </label>
+        </p>
+
+        <p><input type="submit" value="送信"></p>
+    </form>
+</body>
+</html>
