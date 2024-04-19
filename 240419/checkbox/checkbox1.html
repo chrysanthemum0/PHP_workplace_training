@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>複数の項目を選択できます。</p>
+    <form action="checkbox2.php" method="post" >
+        <input type="checkbox" name="hobby[]" id="hobby1" value="sports">
+        <label for="hobby1">Sports</label><br>
+        <input type="checkbox" name="hobby[]" id="hobby2" value="music">
+        <label for="hobby2">Music</label><br>
+        <input type="checkbox" name="hobby[]" id="hobby3" value="movie">
+        <label for="hobby3">Movie</label><br>
+        <input type="checkbox" name="hobby[]" id="hobby4" value="book">
+        <label for="hobby4">Book</label><br>
+        <input type="checkbox" name="hobby[]" id="hobby5" value="etc">
+        <label for="hobby5">ETC..</label><br>
+        
+        <p><input type="submit" value="送信"></p>
+    </form>
+</body>
+</html>
