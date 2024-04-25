@@ -26,3 +26,7 @@ WHERE delivery_date BETWEEN '1996-01-01' AND '1996-12-31'
 AND cust_address LIKE '%渋谷区%';
 
 #6
+SELECT cust_id, cust_name, tel
+FROM customer
+WHERE tel NOT RLIKE '^0(3|6)';
+
