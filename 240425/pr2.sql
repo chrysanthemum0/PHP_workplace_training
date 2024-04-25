@@ -20,5 +20,9 @@ WHERE prod_id IN (102, 104, 106)
 ORDER BY (cost * discount) DESC;
 
 #5
-SELECT cust_id, cust_address, delivery_date FROM packedsales
-WHERE delivery_date = '1996' AND cust_address  LIKE '%渋谷区%';
+SELECT cust_id, cust_address, delivery_date 
+FROM packedsales
+WHERE delivery_date BETWEEN '1996-01-01' AND '1996-12-31'
+AND cust_address LIKE '%渋谷区%';
+
+#6
