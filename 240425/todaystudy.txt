@@ -1,0 +1,56 @@
+#### SQL 기초 
+
+#####기본 형식 
+SELECT 무엇을 출력할지 FROM 테이블
+WHERE 조건선택 ORDER BY 결과의 소토
+
+열명 뒤에 AS 붙이고 문자열로 변환가능
+SELECT prod_name AS 고객 FROM customer;
+
+- NULL값 변환
+COALESCE(식, 값)
+ex)COALESCE(tell, (1)바꿀 값)
+
+- FORMAT 소수점 어디까지 표시할건지
+FORMAT(sal, 2)
+
+- ORDER BY
+ORDER BY price ASC  올림차순 
+ORDER BY price DESC 내림차순
+
+ORDER BY sal DESC LIMIT 3 // sal 행 최대 3개 출력
+ORDER BY sal DESC LIMIT 3 OFFSET 1 // 1행스킵 후 3개 출력
+
+- WHERE문 
+
+연계연산자 다른 언어랑 비슷
+SELECT emp_name, sal FROM employee
+WHERE sal >= 2000; 임플로이 테이블에서 급여 2000이상 출력
+
+DATE도 가능
+SELECT emp_name, birthday FROM employee
+WHERE birthday >= '1980-01-01'; 1980년도 이상 출력 
+
+x BTWEEN a AND b
+WHERE sal BTWEEN 2000 AND 3000;
+2000 <= sal <= 3000 출력 
+NOT은 or의 개념
+x < a OR x > b 
+
+IN연산자
+SELECT prod_id, prod_name, (cost * discount) FROM product
+WHERE prod_id IN (102, 104, 106)
+ORDER BY (cost * discount) DESC;
+
+IN(a, b) / x = a or x = b
+NOT은 반대 x != a AND !=b
+
+LIKE연산자
+WHERE address LIKE '%大阪市%'
+안에 문자 찾는것 자세한건 구글링 
+
+NULL의 검색 
+IS NULL 
+IS NOT NULL 
+SELECT * FROM employee WHERE comm IS NOT NULL; 
+NULL값 아닌거 가져와라 
