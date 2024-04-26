@@ -8,5 +8,5 @@
 ### 240422<br> * PHP교재162p ~ 182p 강의찾아서 공부할 것. (**나중에 추가공부 필요 **) <br> 
 ### 240423<br> * 세션, 쿠키, 보안취약점 및 방어 방법 <br> [이동](https://github.com/chrysanthemum0/PHP_workplace_training/tree/main/240423)
 ### 240424<br> * TEST(100/60) / Quiz(100/100) <br> [이동](https://github.com/chrysanthemum0/PHP_workplace_training/tree/main/240424)
-### 240424<br> * SQL 기초 <br> [이동](https://github.com/chrysanthemum0/PHP_workplace_training/tree/main/240425)
-
+### 240425<br> * SQL 기초 <br> [이동](https://github.com/chrysanthemum0/PHP_workplace_training/tree/main/240425)
+### 240426<br> * SQL (**테이블 결합 복습 / 그 외 데이블 직접 생성하고 데이터 생성도 해보기**) <br> [이동](https://github.com/chrysanthemum0/PHP_workplace_training/tree/main/240426)
